@@ -9,19 +9,11 @@ import UIKit
 
 class DetailsViewController: UIViewController {
     
-    @IBOutlet weak var dadView: UIView!
-    @IBOutlet weak var momView: UIView!
-    @IBOutlet weak var braxsonView: UIView!
-    @IBOutlet weak var ethanView: UIView!
-    @IBOutlet weak var loganView: UIView!
-    @IBOutlet weak var alliView: UIView!
+    @IBOutlet weak var nameLable: UILabel!
+    @IBOutlet weak var detailsImageView: UIImageView!
+    @IBOutlet weak var moreInfoLable: UILabel!
     
-    var showDad = false
-    var showMom = false
-    var showBraxson = false
-    var showEthan = false
-    var showLogan = false
-    var showAlli = false
+    var familyMember: FamilyMember?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,24 +21,11 @@ class DetailsViewController: UIViewController {
     }
     
     func updateUi() {
-        if showDad {
-            dadView.isHidden = false
-        }
-        if showMom {
-            momView.isHidden = false
-        }
-        if showBraxson {
-            braxsonView.isHidden = false
-        }
-        if showEthan {
-            ethanView.isHidden = false
-        }
-        if showLogan {
-            loganView.isHidden = false
-        }
-        if showAlli {
-            alliView.isHidden = false
-        }
+        guard let familyMember else { return } // handle edge cases later
+        nameLable.text = familyMember.name
+        let familyMemberImage = UIImage(named: familyMember.pictureAssetName)
+        detailsImageView.image = familyMemberImage
+        moreInfoLable.text = familyMember.moreInfo
     }
     
 
