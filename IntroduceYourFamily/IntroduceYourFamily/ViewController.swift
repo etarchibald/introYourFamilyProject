@@ -33,27 +33,27 @@ class ViewController: UIViewController {
     
     @IBAction func ethanButtonPressed(_ sender: Any) {
         selectedFamilyMember = me
-        performSegue(withIdentifier: "toDetails", sender: (Any).self)
+        performSegue(withIdentifier: "toDetails", sender: nil)
     }
     @IBAction func dadButtonPress(_ sender: Any) {
         selectedFamilyMember = dad
-        performSegue(withIdentifier: "toDetails", sender: (Any).self)
+        performSegue(withIdentifier: "toDetails", sender: nil)
     }
     @IBAction func momButtonPress(_ sender: Any) {
         selectedFamilyMember = mom
-        performSegue(withIdentifier: "toDetails", sender: (Any).self)
+        performSegue(withIdentifier: "toDetails", sender: nil)
     }
     @IBAction func braxsonButtonPress(_ sender: Any) {
         selectedFamilyMember = braxson
-        performSegue(withIdentifier: "toDetails", sender: (Any).self)
+        performSegue(withIdentifier: "toDetails", sender: nil)
     }
     @IBAction func loganButtonPress(_ sender: Any) {
         selectedFamilyMember = logan
-        performSegue(withIdentifier: "toDetails", sender: (Any).self)
+        performSegue(withIdentifier: "toDetails", sender: nil)
     }
     @IBAction func alliButtonPress(_ sender: Any) {
         selectedFamilyMember = alli
-        performSegue(withIdentifier: "toDetails", sender: (Any).self)
+        performSegue(withIdentifier: "toDetails", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

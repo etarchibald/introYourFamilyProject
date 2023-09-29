@@ -17,10 +17,10 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUi()
+        updateUI()
     }
     
-    func updateUi() {
+    func updateUI() {
         guard let familyMember else { return } // handle edge cases later
         nameLable.text = familyMember.name
         let familyMemberImage = UIImage(named: familyMember.pictureAssetName)
