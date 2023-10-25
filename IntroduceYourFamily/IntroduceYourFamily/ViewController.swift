@@ -7,11 +7,6 @@
 
 import UIKit
 
-struct FamilyMember {
-    var name: String
-    var pictureAssetName: String
-    var moreInfo: String
-}
 
 let me = FamilyMember(name: "Ethan", pictureAssetName: "ethanDetails", moreInfo: "Yup this is me. I am 21 years old. I've lived in Lehi my whole life. I like to go swimming and relaxing on the beach")
 let dad = FamilyMember(name: "Jason", pictureAssetName: "daddetails", moreInfo: "This is my Dad. He was born in northern Utah, He went to Utah State for College. Now he works for Adobe here in Lehi. He always has a project to work on and loves completing them")

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A661CB12AE9A58F00381780 /* FamilyMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A661CB02AE9A58F00381780 /* FamilyMember.swift */; };
+		4A661CB32AE9A71A00381780 /* FamilyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A661CB22AE9A71A00381780 /* FamilyTableViewController.swift */; };
+		4A661CB52AE9AB5700381780 /* FamilyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A661CB42AE9AB5700381780 /* FamilyTableViewCell.swift */; };
+		4A661CBB2AE9B1A900381780 /* AddFamilyMemberTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A661CBA2AE9B1A900381780 /* AddFamilyMemberTableViewController.swift */; };
 		4AC0FAC32ABCA02D00C9B7C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC0FAC22ABCA02D00C9B7C7 /* AppDelegate.swift */; };
 		4AC0FAC52ABCA02D00C9B7C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC0FAC42ABCA02D00C9B7C7 /* SceneDelegate.swift */; };
 		4AC0FAC72ABCA02D00C9B7C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC0FAC62ABCA02D00C9B7C7 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A661CB02AE9A58F00381780 /* FamilyMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMember.swift; sourceTree = "<group>"; };
+		4A661CB22AE9A71A00381780 /* FamilyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyTableViewController.swift; sourceTree = "<group>"; };
+		4A661CB42AE9AB5700381780 /* FamilyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyTableViewCell.swift; sourceTree = "<group>"; };
+		4A661CBA2AE9B1A900381780 /* AddFamilyMemberTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFamilyMemberTableViewController.swift; sourceTree = "<group>"; };
 		4AC0FABF2ABCA02D00C9B7C7 /* IntroduceYourFamily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntroduceYourFamily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC0FAC22ABCA02D00C9B7C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC0FAC42ABCA02D00C9B7C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,14 +66,18 @@
 		4AC0FAC12ABCA02D00C9B7C7 /* IntroduceYourFamily */ = {
 			isa = PBXGroup;
 			children = (
-				4AC0FAC22ABCA02D00C9B7C7 /* AppDelegate.swift */,
-				4AC0FAC42ABCA02D00C9B7C7 /* SceneDelegate.swift */,
 				4AC0FAD82ABDDCC600C9B7C7 /* DetailsViewController.swift */,
 				4AC0FAC62ABCA02D00C9B7C7 /* ViewController.swift */,
+				4AC0FAC22ABCA02D00C9B7C7 /* AppDelegate.swift */,
+				4AC0FAC42ABCA02D00C9B7C7 /* SceneDelegate.swift */,
 				4AC0FAC82ABCA02D00C9B7C7 /* Main.storyboard */,
 				4AC0FACB2ABCA02E00C9B7C7 /* Assets.xcassets */,
 				4AC0FACD2ABCA02E00C9B7C7 /* LaunchScreen.storyboard */,
 				4AC0FAD02ABCA02E00C9B7C7 /* Info.plist */,
+				4A661CB02AE9A58F00381780 /* FamilyMember.swift */,
+				4A661CB42AE9AB5700381780 /* FamilyTableViewCell.swift */,
+				4A661CB22AE9A71A00381780 /* FamilyTableViewController.swift */,
+				4A661CBA2AE9B1A900381780 /* AddFamilyMemberTableViewController.swift */,
 			);
 			path = IntroduceYourFamily;
 			sourceTree = "<group>";
@@ -144,7 +156,11 @@
 				4AC0FAC72ABCA02D00C9B7C7 /* ViewController.swift in Sources */,
 				4AC0FAC32ABCA02D00C9B7C7 /* AppDelegate.swift in Sources */,
 				4AC0FAC52ABCA02D00C9B7C7 /* SceneDelegate.swift in Sources */,
+				4A661CB32AE9A71A00381780 /* FamilyTableViewController.swift in Sources */,
 				4AC0FAD92ABDDCC600C9B7C7 /* DetailsViewController.swift in Sources */,
+				4A661CBB2AE9B1A900381780 /* AddFamilyMemberTableViewController.swift in Sources */,
+				4A661CB52AE9AB5700381780 /* FamilyTableViewCell.swift in Sources */,
+				4A661CB12AE9A58F00381780 /* FamilyMember.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,17 +15,36 @@ class DetailsViewController: UIViewController {
     
     var familyMember: FamilyMember?
     
+    init?(coder: NSCoder, familyMember: FamilyMember) {
+        self.familyMember = familyMember
+        super.init(coder: coder)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
     
+    
     func updateUI() {
+        
         guard let familyMember else { return } // handle edge cases later
         nameLable.text = familyMember.name
+        
         let familyMemberImage = UIImage(named: familyMember.pictureAssetName)
-        detailsImageView.image = familyMemberImage
+       
+        if familyMemberImage == nil {
+            detailsImageView.image = familyMember.pictureAssetName.imageFromBase64
+        } else {
+            detailsImageView.image = familyMemberImage
+        }
+        
         moreInfoLable.text = familyMember.moreInfo
+        
     }
     
 
@@ -39,4 +58,11 @@ class DetailsViewController: UIViewController {
     }
     */
 
+}
+
+extension String {
+    var imageFromBase64: UIImage? {
+        guard let imageData = Data(base64Encoded: self) else { return nil }
+        return UIImage(data: imageData)
+    }
 }
