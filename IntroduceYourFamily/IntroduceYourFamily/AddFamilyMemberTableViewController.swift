@@ -56,7 +56,7 @@ class AddFamilyMemberTableViewController: UITableViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         
-        let base64 = imageView.image!.base64
+        let base64 = imageView.image?.base64
         
         if let name = nameTextField.text, let moreInfo = moreInfoTextView.text {
             delagate?.newFamilyMember(name: name, picture: base64!, moreInfo: moreInfo)
